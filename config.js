@@ -60,8 +60,12 @@ const SITE = {
       descricao: "Sessões individuais e de casal, com direção e leveza."
     },
     {
-      titulo: "Filmmaking e edição de vídeo",
-      descricao: "Vídeos e edição que transformam ideias e histórias em conteúdo visual."
+      {
+  titulo: "Filmmaking e edição de vídeo",
+  descricao: "Produção audiovisual, captação e edição de vídeos para eventos, projetos, marcas e conteúdos digitais.",
+  link: "https://zionhouse.vercel.app/",
+  linkTexto: "Ver portfólio audiovisual"
+},
     },
     {
       titulo: "Projetos autorais",
