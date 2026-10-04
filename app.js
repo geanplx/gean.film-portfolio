@@ -307,34 +307,7 @@ function iniciarSite() {
                 ${contato()}
             `,
 
-            servicos: () => `
-    <section class="pg">
-        <div class="cab">
-            <p class="rot">${esc(SITE.marca || "")}</p>
-            <h1>${esc(T.tituloServicos || "Serviços")}</h1>
-        </div>
-
-        <div class="scards">
-            ${(SITE.servicos || []).map(s => `
-                <article>
-                    <h3>${esc(s.titulo)}</h3>
-                    <p>${esc(s.descricao || "")}</p>
-
-                    ${s.link ? `
-                        <a 
-                            href="${s.link}" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="btn btn-ghost"
-                        >
-                            ${esc(s.linkTexto || "Ver portfólio")} ↗
-                        </a>
-                    ` : ""}
-                </article>
-            `).join("")}
-        </div>
-    </section>
-    ${contato()}
+            servicos: () => `<section class="pg"><div class="cab"><p class="rot">${esc(SITE.marca || "")}</p><h1>${esc(T.tituloServicos || "Serviços")}</h1></div><div class="scards">${(SITE.servicos || []).map(s => `<article><h3>${esc(s.titulo)}</h3><p>${esc(s.descricao || "")}</p>${s.link ? `<a href="${s.link}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">${esc(s.linkTexto || "Ver portfólio")} ↗</a>` : ""}</article>`).join("")}</div></section>${contato()}`,
 `,
             `,
 
